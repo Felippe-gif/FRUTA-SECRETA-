@@ -1,0 +1,17 @@
+import random
+print("\n\t\t === FRUTA SECRETA === \n")
+
+frutas = ['morango','abacaxi','banana', 'manga', 'pinha','maça','uva','pitaia']
+for i in range(0,5):
+    n=str(input('acerte a fruta:'))
+    resultado = random.choice(frutas)
+
+    if n == resultado:
+        print(f'Tente adivinhar a fruta secreta ! {i} tentativas ')
+        print('acertou')
+        break
+    else:
+        print(f'Tente adivinhar a fruta secreta ! {i} tentativas ')
+        print('errou! tente novamente')
+
+print(f' Fruta correta:{resultado}')
